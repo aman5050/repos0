@@ -3,8 +3,8 @@ pipeline {
 stages {
   stage('Git_checkout') {
     steps {
-       echo "This is my first step Git_checkout"
-       git credentialsId: '2e056a28-f3ea-4f64-b920-f14da3ae288d', url: 'https://github.com/aman5050/repos0.git'
+       echo "This is my first step Git_checkout is commented out b/c I provided Pipeline script from Git Option"
+       //git credentialsId: '2e056a28-f3ea-4f64-b920-f14da3ae288d', url: 'https://github.com/aman5050/repos0.git'
     }
   }
   stage('Build') {
